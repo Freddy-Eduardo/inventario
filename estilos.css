@@ -1,0 +1,202 @@
+.contenedor{
+  width: 60%;
+    margin: auto;
+    background: rgba(224, 224, 224, 0.72);
+    padding: 20px 25px ;
+    border: 1px solid  rgba(67, 66, 66, 0.31);
+    box-shadow: 0 10px 10px 0px rgba(129, 135, 150, 0.8);
+    transition: 0.5s;
+}
+.contenedor:hover{
+    margin: auto;
+    background: rgba(224, 224, 224, 0.72);
+    padding: 20px 25px ;
+    border: 1px solid  rgba(67, 66, 66, 0.31);
+-moz-box-shadow: 0px 5px 24px -1px #4b5570;
+	-webkit-box-shadow: 0px 5px 24px -1px #4b5570;
+	box-shadow: 0px 5px 24px -1px #4b5570;
+}
+
+.border{
+    border-bottom: 2px solid rgba(6, 40, 75, 0.89);
+    width: 40%;
+    transition: 0.6s;
+}
+.border:hover{
+    border-bottom: 2px solid rgba(6, 40, 75, 0.89);
+    width: 45%;
+    cursor: pointer;
+}
+/*/////////////----------border buton para el texto de inicio-------///////// */
+
+.form-control{
+    margin-bottom: 5px;
+}
+/*-----------control de imagen de bienvenida-----------*/
+.cont{
+    width: 100%;
+    background-image:url(icons/dise%C3%B1o.jpg);
+     background-repeat: no-repeat;
+}
+.texto{
+    padding: 120px 250px 250px 250px;
+    color: #151515;
+    font-size: 20px;
+}
+.texto:hover{
+    padding: 120px 250px 250px 250px;
+    color: aliceblue;
+    font-size: 20px;
+    background: rgba(29, 29, 29, 0.24);
+    cursor: pointer;
+    transition-property:background;
+  transition-duration: 1s; 
+}
+
+.form-group{
+display: inline-flex;
+    
+}
+/*-----------fin de imagen -----------*/
+
+
+/*-----------control de imagenes -----------*/
+.img1,.img2{
+    width: 20%;
+    display:inline-block;
+    margin: 20px 10px;
+    margin-left: 36%;
+}
+
+.img1:hover{ 
+   opacity: 0.9;
+    transition:;
+    cursor: pointer;
+    border-bottom: 0;
+    display: inline-flex;
+    border: 2px solid White;
+    border-radius: 90px;
+}
+.img2:hover{
+    opacity: 0.9;
+    transition:;
+    cursor: pointer;
+    display: inline-flex;
+     border: 2px solid #ffffff;
+    border-radius: 90px;
+}
+/*------------------inicio del media Query------------------------*/
+
+
+@media (max-width: 1120px) {
+/*  este es el contenedor de las pestañas en el cual se le modifica el tamaño para que ocupe
+    el 95% dela pantalla para dispositivo moviles */
+   .contenedor{
+  width: 95%;
+    margin: auto;
+    background: rgba(224, 224, 224, 0.94);
+    border: 1px solid  rgba(67, 66, 66, 0.31);
+    box-shadow: 0 10px 10px 0px rgba(33, 51, 98, 0.8);
+}
+        /*en esta pestaña solo se cambia el tamaño del texto de las pestañas para que e visualise mejor
+    en los dispositivos moviles*/
+    #pestanas {
+    float: top;
+    font-size: 12.3px;
+    font-weight: bold;
+}
+/*   En este media query se cambia la imagen por una mas pequeña para que entre en el
+    panel de contenido en el cual es una tabla*/
+.cont{
+    width: 100%;
+    background-image:url(icons/icon-3.jpg);
+}
+/*    este es el texto de bienvenida  que se le da al usuario*/
+.texto{
+     padding: 100px 100px 210px 100px;
+    color: #151515;
+    font-size: 15px;
+    text-align: center;
+     
+}
+.texto:hover{
+     padding: 100px 100px 210px 100px;
+    color: aliceblue;
+    font-size: 15px;
+    text-align: center;
+    background: rgba(29, 29, 29, 0.24);
+    cursor: pointer;
+    transition-property:background;
+  transition-duration: 1s;
+} 
+ .border{
+    border-bottom: 2px solid rgba(6, 40, 75, 0.89);
+    width: 50%;
+    transition: 0.6s;
+}
+.border:hover{
+    border-bottom: 2px solid rgba(6, 40, 75, 0.89);
+    width: 60%;
+    cursor: pointer;
+}
+/*/////////////----------border buton para el texto de inicio-------///////// */
+
+    
+}/*-------------------fin del media Query--------------------------*/
+
+
+
+#text{
+    display: inline-block;
+   color: #7b7b7b;
+       
+}
+/*-----------fin de control de imagenes -----------*/
+  .footer {
+  position:static;
+  width: 100%;
+  padding: 20px 20px 74px 20px;
+    position:static;
+    margin-top:85px;
+  background-color: rgba(191, 190, 190, 0.29);
+      border-top: 1px solid rgba(87, 89, 90, 0.43);
+}
+.myButton {
+	-moz-box-shadow: 0px 4px 1px 0px #425e7a;
+	-webkit-box-shadow: 0px 4px 1px 0px #425e7a;
+	box-shadow: 0px 4px 1px 0px #425e7a;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+	background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+	background-color:#007dc1;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}/*  estilos a boton Enviar al formulario*/
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+	background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+	background-color:#0061a7;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
